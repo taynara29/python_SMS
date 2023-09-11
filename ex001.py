@@ -3,7 +3,7 @@ import pandas as pd
 # Passo a passo de solucão
 
 #Abrir os 6 arquivos em excel.
-lista_meses =['Janeiro','Fevereiro','Marco','Abril','Maio','junho']
+lista_meses =['janeiro','fevereiro','março','abril','maio','junho']
 
 for mes in lista_meses:
     #print (mes)
@@ -12,7 +12,7 @@ for mes in lista_meses:
     if (tabela_vendas['Vendas'] > 55000).any():
         vendedor = tabela_vendas.loc[tabela_vendas['Vendas'] > 55000,'Vendedor'].values[0] 
         vendas = tabela_vendas.loc[tabela_vendas['Vendas'] > 55000,'Vendas'].values[0] 
-        print (f'no mes {mes} encontou alguem com mais de 55000')
+        print (f'no mes {mes} encontou alguem com mais de 55000: {vendedor}, vendas: {vendas}')
 
 
 # Para cada arqruivo:
